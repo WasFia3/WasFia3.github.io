@@ -285,7 +285,7 @@ p { text-wrap: pretty; }
 /* ---------- Services: sticky notes ---------- */
 .services { padding-bottom: 128px; }
 .services .h2 { margin-bottom: 48px; }
-.notes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
 .sticky {
   position: relative;
   background: var(--st);
