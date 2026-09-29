@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Wasfia Awwad | Character artist and developer</title>
+  <meta name="description" content="Wasfia Awwad draws 2D characters and builds websites and Android apps. Commissions are open.">
+  <meta property="og:title" content="Wasfia Awwad | Character artist and developer">
+  <meta property="og:description" content="2D character commissions, websites and Android apps.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500;700&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a href="index.html" class="wordmark" aria-current="page">Wasfia Awwad</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="sidequests.html">Side quests</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <h1 class="hero-name load-in">Wasfia <span class="underline">Awwad</span></h1>
+        <p class="hero-lead load-in">
+          I draw <mark class="mk mk-pink">characters</mark>, build <mark class="mk mk-blue">websites</mark> and <mark class="mk mk-olive">Android&nbsp;apps</mark>.
+        </p>
+        <p class="hero-sub load-in">Computer Science graduate from Birzeit University, and Digital Artist.</p>
+        <div class="hero-actions load-in">
+          <!-- btn-learn-more: script.js makes the character smile while this is hovered -->
+          <a href="contact.html" class="btn btn-primary btn-learn-more">Commission me</a>
+          <a href="#projects" class="text-link">See my projects</a>
+        </div>
+      </div>
+
+      <div class="hero-art fade-in">
+        <p class="hand note-hero" aria-hidden="true">
+          psst, this was<br>animated<br>frame by<br>frame
+          <img class="doodle note-arrow" src="images/doodles/arrow.svg" alt="">
+        </p>
+        <figure class="polaroid">
+          <span class="tape tape-pink tape-left" aria-hidden="true"></span>
+          <span class="tape tape-olive tape-right" aria-hidden="true"></span>
+          <div class="hero-panel">
+            <canvas id="animeCanvas" width="500" height="600" role="img" aria-label="Wasfia’s original character, animated. She smiles on hover and gets dizzy if you drag and shake her."></canvas>
+          </div>
+          <figcaption class="hand">This is my Original Character Helianthus, which means "sunflower" in Latin.</figcaption>
+        </figure>
+        <!-- follows the character; its text changes with her mood (site.js) -->
+        <p class="bubble" id="bubble" aria-live="polite" hidden></p>
+      </div>
+    </section>
+
+    <!-- SERVICES: sticky notes -->
+    <section id="services" class="services container">
+      <h2 class="h2 reveal">What I <span class="underline">make</span></h2>
+      <div class="notes">
+        <article class="sticky sticky-pink reveal">
+          <img class="doodle sticky-doodle" src="images/doodles/brush.svg" alt="" width="72" height="72">
+          <h3>2D character commissions</h3>
+          <p>Original characters, reference and expression sheets, portraits and fan art.</p>
+          <p class="hand status">open now!</p>
+        </article>
+        <article class="sticky sticky-blue reveal">
+          <img class="doodle sticky-doodle" src="images/doodles/screen.svg" alt="" width="72" height="72">
+          <h3>Websites</h3>
+          <p>Portfolios, small business sites and web apps.</p>
+          <p class="hand status">open now!</p>
+        </article>
+        <article class="sticky sticky-olive reveal">
+          <img class="doodle sticky-doodle" src="images/doodles/phone.svg" alt="" width="72" height="72">
+          <h3>Android apps</h3>
+          <p>Android apps in Java, and Android games in Unity.</p>
+          <p class="hand status">open now!</p>
+        </article>
+        <article class="sticky sticky-soon reveal">
+          <img class="doodle sticky-doodle" src="images/doodles/cube.svg" alt="" width="72" height="72">
+          <h3>3D commissions</h3>
+          <p>Characters and props in Blender. I’m still practising, so not open yet.</p>
+          <p class="hand status">coming soon...</p>
+        </article>
+      </div>
+      <p class="qa-line reveal">I also trained as a <mark class="mk mk-blue">Quality Assurance tester</mark>, so I try to break things before you can. :p</p>
+    </section>
+
+    <!-- PROJECTS: GIFs taped into the sketchbook.
+         To add a GIF, replace an empty <div class="gif-slot"></div> with:
+         <img class="gif-slot" src="images/work/NAME.gif" alt="What the GIF shows" loading="lazy"> -->
+    <section id="projects" class="projects-section container">
+      <h2 class="h2 reveal">Some of my <span class="underline">projects</span></h2>
+      <div class="projects">
+        <article class="project project-a reveal">
+          <div class="photo">
+            <span class="tape tape-blue tape-center" aria-hidden="true"></span>
+               <img class="gif-slot" src="images/work/Olfa.gif" alt="Gameplay from Olfa, the VR learning game" width="800" height="501" loading="lazy">
+            <aside class="brag" aria-label="The laptop Olfa was built on">
+              <p class="hand brag-title">built on this potato:</p>
+              <ul class="brag-specs">
+                <li>HP Laptop 15</li>
+                <li>Intel i5-10210U</li>
+                <li>GeForce MX130, 4 GB</li>
+                <li>16 GB RAM</li>
+              </ul>
+              <p class="hand brag-punch">yes, a VR GAME.</p>
+            </aside>
+          </div>
+          <p class="hand project-note">my graduation project!</p>
+          <h3>Olfa</h3>
+          <p>A VR learning game for children with autism, built for Meta Quest 3 in a team of two. It adapts to each child, speaks Arabic, and has a dashboard for parents.</p>
+          <p class="project-meta">Unity, C#, Blender, MySQL</p>
+        </article>
+
+        <article class="project project-b reveal">
+          <div class="photo">
+            <span class="tape tape-pink tape-left" aria-hidden="true"></span>
+            <span class="tape tape-pink tape-right" aria-hidden="true"></span>
+               <img class="gif-slot" src="images/work/genetic.PNG" alt="The genetic algorithm app charting fitness over generations" width="1022" height="662" loading="lazy">
+          </div>
+          <h3><a href="https://github.com/WasFia3/Breaking-a-Password-Using-Genetic-Algorithm" target="_blank" rel="noopener">Cracking a password with a genetic algorithm</a></h3>
+          <p>Evolves random guesses until it finds a 32-bit passcode, charted live in JavaFX.</p>
+          <p class="project-meta">Java, JavaFX</p>
+        </article>
+
+        <article class="project project-c reveal">
+          <div class="photo">
+            <span class="tape tape-olive tape-center" aria-hidden="true"></span>
+               <img class="gif-slot" src="images/work/alphabet_game.gif" alt="A child tracing a letter in the letter-tracing game" width="800" height="538" loading="lazy">
+          </div>
+          <h3>Letter-tracing game</h3>
+          <p>A game that teaches kids to write letters, made during my GreenBackend training in 2025.</p>
+          <p class="project-meta">Unity, C#</p>
+        </article>
+
+        <article class="project project-d reveal">
+          <div class="photo">
+            <span class="tape tape-blue tape-left" aria-hidden="true"></span>
+               <img class="gif-slot" src="images/work/rent_website.gif" alt="Browsing flats on the rental website" width="800" height="387" loading="lazy">
+          </div>
+          <h3>Flat rental website</h3>
+          <p>Renters book viewings, owners approve them, and both can message each other.</p>
+          <p class="project-meta">HTML, CSS, PHP, MySQL</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOOLS: a strip of tape running across the page -->
+    <section class="tools" aria-labelledby="tools-title">
+      <h2 id="tools-title" class="h2 container reveal">Tools in my <span class="underline">pencil case</span></h2>
+      <div class="tape-strip">
+        <div class="marquee">
+          <ul class="marquee-track">
+            <li>Clip Studio Paint</li><li>Blender</li><li>Unity</li><li>Android Studio</li><li>Figma</li><li>JavaScript</li><li>Java</li><li>C#</li><li>PHP</li><li>Python</li><li>SQL</li><li>Photoshop</li><li>Git</li><li>Cypress</li><li>Postman</li>
+          </ul>
+          <ul class="marquee-track" aria-hidden="true">
+            <li>Clip Studio Paint</li><li>Blender</li><li>Unity</li><li>Android Studio</li><li>Figma</li><li>JavaScript</li><li>Java</li><li>C#</li><li>PHP</li><li>Python</li><li>SQL</li><li>Photoshop</li><li>Git</li><li>Cypress</li><li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing container">
+      <div class="page-sheet reveal">
+        <span class="tape tape-olive tape-left" aria-hidden="true"></span>
+        <span class="tape tape-pink tape-right" aria-hidden="true"></span>
+        <h2 class="closing-title">Have a <mark class="mk mk-pink">character design</mark> in mind?</h2>
+        <p>Or a website, or an app. Tell me about it and I’ll send you a quote.</p>
+        <div class="closing-actions">
+          <a href="contact.html" class="btn btn-primary">Commission me</a>
+          <a href="mailto:wasfia.s.awwad@gmail.com" class="text-link">wasfia.s.awwad@gmail.com</a>
+        </div>
+        <p class="hand closing-note">no idea is too weird :3</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Wasfia Awwad</p>
+    <nav class="footer-links" aria-label="Social">
+      <a href="https://www.instagram.com/totally_not_byte/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/wasfia-awwad/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/WasFia3" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="site.js"></script>
+
+  <audio id="sndAngry" src="audio/angry.mp3" preload="auto"></audio>
+  <audio id="sndDrag" src="audio/drag.mp3" loop preload="auto"></audio>
+  <audio id="sndSlide" src="audio/slide_to_place.mp3" preload="auto"></audio>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# local backups and editor / AI tool files (not part of the site)
+_backup_original/
+.agents/
+.claude/
+skills-lock.json
+
+# OS junk
+Thumbs.db
+.DS_Store

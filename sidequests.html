@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Side quests | Wasfia Awwad</title>
+  <meta name="description" content="What Wasfia Awwad does when she isn't drawing or coding: chess, games, series and music.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500;700&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a href="index.html" class="wordmark">Wasfia Awwad</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="sidequests.html" aria-current="page">Side quests</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="sq-intro container">
+      <h1 class="hero-name sq-title load-in">Side <span class="underline">quests</span></h1>
+      <p class="hero-lead load-in">What I do when I’m not drawing or coding.</p>
+    </section>
+
+    <!-- CHESS: numbers come from data/chess.json (refresh with tools/update_chess.py) -->
+    <section class="sq-chess container" aria-labelledby="chess-title">
+      <div class="chess-text reveal">
+        <h2 id="chess-title" class="h2">Chess</h2>
+        <p class="hand chess-note">rated on chess.com, still climbing</p>
+        <p class="chess-flex"><mark class="mk mk-olive"><span data-chess="rapid.games">1,344</span> rapid games</mark> played so far.</p>
+        <p class="helper">Updated <span data-chess="updated">29 Sep 2026</span></p>
+      </div>
+
+      <div class="chess-stage reveal">
+        <div class="scores">
+          <div class="score score-main">
+            <span class="score-label">Rapid</span>
+            <span class="score-num" data-chess="rapid.rating">683</span>
+            <span class="hand score-best">best <span data-chess="rapid.best">821</span></span>
+          </div>
+          <div class="score">
+            <span class="score-label">Blitz</span>
+            <span class="score-num" data-chess="blitz.rating">538</span>
+            <span class="hand score-best">best <span data-chess="blitz.best">558</span></span>
+          </div>
+        </div>
+        <div class="board" aria-hidden="true">
+          <span class="piece" style="--c:5; --r:2">&#9818;&#xFE0E;</span>
+          <span class="piece" style="--c:3; --r:2">&#9819;&#xFE0E;</span>
+          <span class="piece" style="--c:6; --r:3">&#9822;&#xFE0E;</span>
+          <span class="piece" style="--c:4; --r:4">&#9823;&#xFE0E;</span>
+          <span class="piece piece-w" style="--c:5; --r:5">&#9817;&#xFE0E;</span>
+          <span class="piece piece-w" style="--c:3; --r:6">&#9816;&#xFE0E;</span>
+          <span class="piece piece-w" style="--c:7; --r:8">&#9812;&#xFE0E;</span>
+          <span class="piece piece-w" style="--c:4; --r:8">&#9813;&#xFE0E;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES: covers from each game's Steam page; Minecraft is a CSS pixel block -->
+    <section class="sq-games container" aria-labelledby="games-title">
+      <h2 id="games-title" class="h2 reveal">Games I <span class="underline">love</span></h2>
+      <ul class="games">
+        <li class="game g-olive reveal">
+          <img class="game-cover" src="images/hobbies/stardew.jpg" alt="Stardew Valley cover" width="460" height="215" loading="lazy">
+          <span class="game-title">Stardew Valley</span><span class="hand game-tag">farming</span>
+        </li>
+        <li class="game g-pink reveal">
+          <img class="game-cover" src="images/hobbies/paladins.jpg" alt="Paladins cover" width="460" height="215" loading="lazy">
+          <span class="game-title">Paladins</span><span class="hand game-tag">hero shooter</span>
+        </li>
+        <li class="game g-blue reveal">
+          <img class="game-cover" src="images/hobbies/hollow-knight.jpg" alt="Hollow Knight cover" width="460" height="215" loading="lazy">
+          <span class="game-title">Hollow Knight</span><span class="hand game-tag">metroidvania</span>
+        </li>
+        <li class="game g-pink reveal">
+          <img class="game-cover" src="images/hobbies/silksong.jpg" alt="Hollow Knight: Silksong cover" width="460" height="215" loading="lazy">
+          <span class="game-title">Hollow Knight: Silksong</span><span class="hand game-tag">metroidvania</span>
+        </li>
+        <li class="game g-olive reveal">
+          <div class="game-cover mc-cover" aria-hidden="true"><span class="mc-block"></span></div>
+          <span class="game-title">Minecraft</span><span class="hand game-tag">sandbox</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SERIES: a TV; pick a show from the list to switch the channel (site.js) -->
+    <section class="sq-tv container" aria-labelledby="watch-title">
+      <h2 id="watch-title" class="h2 reveal">On my <span class="underline">TV</span></h2>
+      <div class="tv-wrap">
+        <div class="tv reveal">
+          <span class="antenna" aria-hidden="true"></span>
+          <div class="tv-body">
+            <div class="tv-screen" aria-live="polite">
+              <div class="channel ch-rezero" data-channel="0">
+                <span class="ch-title">Re:Zero</span><span class="hand ch-note">anime, dark fantasy</span>
+              </div>
+              <div class="channel ch-bb" data-channel="1" hidden>
+                <span class="ch-title"><span class="el">Br</span>eaking <span class="el">Ba</span>d</span><span class="hand ch-note">crime drama</span>
+              </div>
+              <div class="channel ch-saul" data-channel="2" hidden>
+                <span class="ch-title">Better Call Saul!</span><span class="hand ch-note">crime drama</span>
+              </div>
+              <div class="channel ch-nora" data-channel="3" hidden>
+                <span class="ch-title">Noragami</span><span class="hand ch-note">anime, action</span>
+              </div>
+              <div class="channel ch-house" data-channel="4" hidden>
+                <span class="ch-title">House M.D.</span><span class="hand ch-note">medical drama</span>
+              </div>
+            </div>
+            <div class="tv-side" aria-hidden="true"><span class="knob"></span><span class="knob"></span><span class="grille"></span></div>
+          </div>
+          <span class="tv-legs" aria-hidden="true"></span>
+        </div>
+
+        <div class="page-sheet watchlist reveal">
+          <span class="tape tape-pink tape-right" aria-hidden="true"></span>
+          <p class="hand watch-hint">pick a channel:</p>
+          <ul class="checklist">
+            <li><button type="button" class="channel-btn" data-target="0" aria-pressed="true">Re:Zero</button></li>
+            <li><button type="button" class="channel-btn" data-target="1" aria-pressed="false">Breaking Bad</button></li>
+            <li><button type="button" class="channel-btn" data-target="2" aria-pressed="false">Better Call Saul</button></li>
+            <li><button type="button" class="channel-btn" data-target="3" aria-pressed="false">Noragami</button></li>
+            <li><button type="button" class="channel-btn" data-target="4" aria-pressed="false">House M.D.</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="sq-music container" aria-labelledby="music-title">
+      <div class="music-stage">
+        <aside class="sticky sticky-blue music reveal">
+          <h2 id="music-title" class="hand music-title">Music on repeat</h2>
+          <ul class="music-list">
+            <li>Skillet</li>
+            <li>Mitski</li>
+            <li>Hatsune Miku</li>
+            <li>Kikuo</li>
+          </ul>
+        </aside>
+
+        <div class="instrument reveal" aria-hidden="true">
+          <span class="note n1">&#9834;</span>
+          <span class="note n2">&#9835;</span>
+          <span class="note n3">&#9836;</span>
+          <span class="note n4">&#9834;</span>
+          <svg class="guitar" viewBox="0 0 160 360" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path class="guitar-body" d="M80 150c-26 0-40 16-38 38 2 14 10 20 8 32-2 14-24 22-22 54 2 34 26 56 52 56s50-22 52-56c2-32-20-40-22-54-2-12 6-18 8-32 2-22-12-38-38-38z"/>
+            <circle cx="80" cy="238" r="17"/>
+            <path d="M58 290h44"/>
+            <path class="guitar-neck" d="M72 40l2 118h12l2-118z"/>
+            <path class="guitar-head" d="M68 12c6-4 18-4 24 0l-2 30H70z"/>
+            <path d="M68 20h-7M68 32h-7M92 20h7M92 32h7"/>
+            <path d="M76 42v248M80 42v248M84 42v248" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Wasfia Awwad</p>
+    <nav class="footer-links" aria-label="Social">
+      <a href="https://www.instagram.com/totally_not_byte/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/wasfia-awwad/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/WasFia3" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

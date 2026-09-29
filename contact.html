@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Contact | Wasfia Awwad</title>
+  <meta name="description" content="Commission a 2D character, a website or an Android app from Wasfia Awwad.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500;700&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a href="index.html" class="wordmark">Wasfia Awwad</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="sidequests.html">Side quests</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="contact container">
+      <div class="contact-intro">
+        <h1 class="contact-title load-in">Tell me what you want to <mark class="mk mk-pink">make</mark>.</h1>
+        <p class="hero-sub load-in">A character, a website or an Android app. Send the idea, even if it’s rough, and I’ll reply with questions and a quote.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form on a taped sheet -->
+        <div class="page-sheet form-sheet load-in">
+          <span class="tape tape-blue tape-left" aria-hidden="true"></span>
+          <span class="tape tape-olive tape-right" aria-hidden="true"></span>
+
+          <form id="requestForm" class="form" novalidate>
+            <fieldset class="field choice-field">
+              <legend class="label">What do you need?</legend>
+              <div class="choices">
+                <label class="choice c-pink"><input type="radio" name="service" value="2D character art" checked><span>2D character</span></label>
+                <label class="choice c-blue"><input type="radio" name="service" value="Website"><span>Website</span></label>
+                <label class="choice c-olive"><input type="radio" name="service" value="Android app"><span>Android app</span></label>
+                <label class="choice c-soon"><input type="radio" name="service" value="3D (waitlist)"><span>3D waitlist</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-row">
+              <div class="field">
+                <label class="label" for="f-name">Your name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+                <p class="error" id="e-name" hidden>Please add your name.</p>
+              </div>
+              <div class="field">
+                <label class="label" for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+                <p class="error" id="e-email" hidden>Please add an email I can reply to.</p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label class="label" for="f-deadline">Deadline</label>
+                <input id="f-deadline" name="deadline" type="date" aria-describedby="h-deadline">
+                <p class="helper" id="h-deadline">Optional.</p>
+              </div>
+              <div class="field">
+                <label class="label" for="f-refs">Reference link</label>
+                <input id="f-refs" name="refs" type="url" aria-describedby="h-refs e-refs">
+                <p class="helper" id="h-refs">Optional. A Pinterest board or a Drive folder works.</p>
+                <p class="error" id="e-refs" hidden>This link doesn’t look right. Start it with https://</p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="f-details">About your idea</label>
+              <textarea id="f-details" name="details" rows="6" required aria-describedby="h-details e-details"></textarea>
+              <p class="helper" id="h-details">For art: pose, style, mood. For code: what the site or app should do.</p>
+              <p class="error" id="e-details" hidden>Please tell me a little about the idea.</p>
+            </div>
+
+            <div class="form-foot">
+              <button type="submit" class="btn btn-primary">Send request</button>
+              <p class="helper">This opens your email app with everything filled in.</p>
+            </div>
+          </form>
+
+          <div id="sentMsg" class="sent" hidden tabindex="-1">
+            <h2 class="h2">Almost <mark class="mk mk-olive">done</mark>.</h2>
+            <p class="body-muted">Your email app should be open with the request inside. Press send there and I’ll get back to you.</p>
+            <button type="button" id="againBtn" class="text-link">Write another request</button>
+          </div>
+        </div>
+
+        <!-- Direct contacts as a sticky note -->
+        <aside class="sticky sticky-blue direct load-in" aria-label="Other ways to reach me">
+          <p class="hand direct-title">or find me here</p>
+          <ul class="direct-list">
+            <li><a href="mailto:wasfia.s.awwad@gmail.com"><span class="direct-label">Email</span><span>wasfia.s.awwad@gmail.com</span></a></li>
+            <li><a href="https://wa.me/970595124980" target="_blank" rel="noopener"><span class="direct-label">WhatsApp</span><span>+970 595 124 980</span></a></li>
+            <li><a href="https://www.instagram.com/totally_not_byte/" target="_blank" rel="noopener"><span class="direct-label">Instagram</span><span>@totally_not_byte</span></a></li>
+            <li><a href="https://www.linkedin.com/in/wasfia-awwad/" target="_blank" rel="noopener"><span class="direct-label">LinkedIn</span><span>wasfia-awwad</span></a></li>
+            <li><a href="https://github.com/WasFia3" target="_blank" rel="noopener"><span class="direct-label">GitHub</span><span>WasFia3</span></a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="process container">
+      <h2 class="h2 reveal">How a commission <span class="underline">works</span></h2>
+      <ol class="process-list">
+        <li class="reveal">
+          <span class="hand step-num" aria-hidden="true">1.</span>
+          <h3>Share the idea</h3>
+          <p>Send references, a deadline, and anything you already know.</p>
+        </li>
+        <li class="reveal">
+          <span class="hand step-num" aria-hidden="true">2.</span>
+          <h3>Approve a sketch</h3>
+          <p>You get a rough sketch or plan and a price before I start.</p>
+        </li>
+        <li class="reveal">
+          <span class="hand step-num" aria-hidden="true">3.</span>
+          <h3>Get the files</h3>
+          <p>High-resolution art, or a tested website or Android build.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Wasfia Awwad</p>
+    <nav class="footer-links" aria-label="Social">
+      <a href="https://www.instagram.com/totally_not_byte/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/wasfia-awwad/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/WasFia3" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
