@@ -1,5 +1,17 @@
 {
-  "updated": "2026-09-29",
-  "rapid": { "rating": 683, "best": 821, "wins": 661, "losses": 612, "draws": 71 },
-  "blitz": { "rating": 538, "best": 558, "wins": 210, "losses": 173, "draws": 21 }
+  "updated": "2026-10-05",
+  "rapid": {
+    "rating": 722,
+    "best": 821,
+    "wins": 670,
+    "losses": 616,
+    "draws": 71
+  },
+  "blitz": {
+    "rating": 560,
+    "best": 579,
+    "wins": 212,
+    "losses": 174,
+    "draws": 21
+  }
 }
